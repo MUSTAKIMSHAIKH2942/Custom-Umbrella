@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.umbrella-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#umbrella-container {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+}
+
+#umbrella-image {
+    width: 100%;
+    height: auto;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background: url('images/loader_icon.svg') no-repeat center center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    animation: rotate 1s linear infinite;
+    display: none;
+}
+
+.customizer {
+    flex: 1;
+    text-align: left;
+    background-color: #e0f7fa;
+    padding: 20px;
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.color-swatches {
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
+    margin-bottom: 20px;
+}
+
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.upload-section {
+    margin-top: 20px;
+}
+
+#logo-upload {
+    display: none;
+}
+
+.upload-button {
+    display: inline-block;
+    padding: 6px 70px;
+    background-color: #00BFFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logo-image {
+    display: none;
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+
+.upload-logo {
+    margin-right: 2px;
+    color: #ffffff;
+}
+
+#file-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+@keyframes rotate {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .customizer {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .color-swatches {
+        justify-content: center;
+    }
+
+    .upload-section {
+        padding-left: 0;
+    }
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#Icons {
+    padding-right: 3rem;
+}
