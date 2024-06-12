@@ -28,11 +28,3 @@ This is a web application for customizing and previewing umbrellas. Users can ch
 - `styles.css`: CSS file for styling the web application.
 - `script.js`: JavaScript file for implementing interactivity.
 
-## Credits
-
-- Loader icon: [Font Awesome](https://fontawesome.com/)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-# Custom-Umbrella
